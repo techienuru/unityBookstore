@@ -1,0 +1,91 @@
+/* #5c4ac7 */
+
+/* Admin Login Page Start */
+#admin-login #navbar {
+  background-image: url(../img/footer_pattern.png);
+}
+#admin-login #navbarCollapse {
+  width: fit-content;
+}
+#admin-login #login-wrapper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ffd333;
+  margin-bottom: 0px;
+}
+#admin-login #login-wrapper > div:nth-child(1) > h5 {
+  color: #ffd333;
+}
+
+#admin-login #login-wrapper > div:nth-child(1) > form > div > input:focus {
+  border: 1.5px solid #ffd333;
+}
+#admin-login #login-wrapper > div:nth-child(1) > form > input:last-child {
+  background-color: #ffd333;
+}
+#admin-login #login-wrapper > div:nth-child(2) > p > a {
+  color: #ffd333;
+}
+
+#admin-login #login-section {
+  background-image: url(../img/carousel-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#admin-login #footer-section {
+  background-image: url(../img/footer_pattern.png);
+}
+/* Admin Login Page End */
+
+/* Admin Signup Page Start */
+#admin-signup #navbar {
+  background-image: url(../img/footer_pattern.png);
+}
+#admin-signup #navbarCollapse {
+  width: fit-content;
+}
+#admin-signup #signup-wrapper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ffd333;
+  margin-bottom: 0px;
+}
+#admin-signup #signup-wrapper > div:nth-child(1) > h5 {
+  color: #ffd333;
+}
+#admin-signup
+  #signup-wrapper
+  > div:nth-child(1)
+  > form
+  > div
+  > div
+  > input:focus {
+  border: 1.5px solid #ffd333;
+}
+#admin-signup #signup-wrapper > div:nth-child(1) > form > div > div > input {
+  box-shadow: none;
+}
+#admin-signup #signup-wrapper > div:nth-child(1) > form > input:last-child {
+  background-color: #ffd333;
+}
+#admin-signup #signup-wrapper > div:nth-child(2) > p > a {
+  color: #ffd333;
+}
+
+#admin-signup #login-section {
+  background-image: url(../img/carousel-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#admin-signup #footer-section {
+  background-image: url(../img/footer_pattern.png);
+}
+/* Admin Signup Page End */
