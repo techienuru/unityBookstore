@@ -10,10 +10,11 @@ import {
 } from "../modules/wishlist.js";
 
 let currentpagePathname = window.location.pathname;
+console.log(currentpagePathname);
 
 if (
   currentpagePathname ==
-  "/my-projects/final-year-project/onlineBookshop/wishlist"
+  "/my-projects/final-year-project/unityBookshop/wishlist"
 ) {
   // Displaying wishlists on wishlist.php page
   renderWishlist(wishlist);
@@ -58,4 +59,3 @@ addToWishlistButton.forEach((button) => {
     }
   });
 });
-

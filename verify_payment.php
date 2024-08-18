@@ -9,7 +9,9 @@ if (isset($_GET['reference'])) {
     $reference = $_GET['reference'];
 
     // Set your secret key
-    $secret_key = 'sk_test_72c230c556febf7e85bacb4f7dc4005ddf231c2f';
+    $secret_key = 'sk_live_c2abfbf27defb7f1f5b82309d8cae612491922ae';
+    // The test version for the secret key => sk_test_72c230c556febf7e85bacb4f7dc4005ddf231c2f
+    // The Real secret key => sk_live_c2abfbf27defb7f1f5b82309d8cae612491922ae
 
     $curl = curl_init();
     curl_setopt_array($curl, array(

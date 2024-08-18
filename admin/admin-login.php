@@ -93,12 +93,6 @@ if (isset($_POST["submit"])) {
         if ($isPasswordCorrect) {
             $login->createSession();
             $login->redirection();
-        } else {
-            echo '
-            <script>
-                window.alert(`Error while inserting into DB\nThe error Message is: ' . $connect->error . '`);
-            </script>
-        ';
         }
     }
 }

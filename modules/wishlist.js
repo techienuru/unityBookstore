@@ -91,12 +91,12 @@ export function renderWishlistNumber() {
 export function renderWishlist(wishlist) {
   let wishlists = "";
   wishlist.forEach((value) => {
-    let bookId = value.bookId;
-    let title = value.title;
-    let author = value.author;
-    let image = value.image;
-    let price = value.price;
-    let discountedPrice = price - 350;
+    const bookId = value.bookId;
+    const title = value.title;
+    const author = value.author;
+    const image = value.image;
+    const price = value.price;
+    const discountedPrice = price - 350;
     wishlists += `<div class="col-lg-3 col-md-4 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden" style="height: 300px;">
