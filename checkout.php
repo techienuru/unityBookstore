@@ -96,7 +96,7 @@ $cart->noInCart();
                             <a href="./" class="nav-item nav-link active">Home</a>
                             <a href="./admin/admin-login" class="nav-item nav-link">Admin Login</a>
                         </div>
-                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                        <div class="navbar-nav ml-auto py-0 d-lg-block">
                             <a href="./wishlist" class="btn px-0" title="Wishlist">
                                 <i class="fas fa-heart text-primary"></i>
                                 <span class="badge text-secondary border border-secondary rounded-circle js-wishlist-content" style="padding-bottom: 2px;">0</span>

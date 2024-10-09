@@ -135,7 +135,7 @@ if (isset($_GET["add_to_cart"])) {
                             <a href="#categories" class="nav-item nav-link">Categories</a>
                             <a href="./admin/admin-login" class="nav-item nav-link">Admin Login</a>
                         </div>
-                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                        <div class="navbar-nav ml-auto py-0 d-lg-block">
                             <a href="./wishlist" class="btn px-0" title="Wishlist">
                                 <i class="fas fa-heart text-primary"></i>
                                 <span class="badge text-secondary border border-secondary rounded-circle js-wishlist-content" style="padding-bottom: 2px;">0</span>
@@ -275,7 +275,8 @@ if (isset($_GET["add_to_cart"])) {
             //         </div>
             //         ';
             // }
-            // ?>
+            // 
+            ?>
         </div>
     </div> -->
     <!-- Newly Added End -->

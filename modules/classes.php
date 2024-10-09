@@ -48,9 +48,7 @@ class books extends index
     }
 }
 
-class wishlist extends index
-{
-}
+class wishlist extends index {}
 class cart extends index
 {
     public $user_id;
@@ -62,8 +60,10 @@ class cart extends index
     {
         $cookie_name = "user_id";
         if (!isset($_COOKIE[$cookie_name])) {
-            $this->user_id = bin2hex(random_bytes(5));
-            setcookie($cookie_name, $this->user_id, time() + (86400 * 30), "/");
+            $this->user_id = bin2hex(random_bytes(5)); //Generates a random number (10 digits)
+
+            //Create a cookie with the random number that expires in 6 months(i.e 30 * 6 = 360)
+            setcookie($cookie_name, $this->user_id, time() + (86400 * 360), "/");
         } else {
             $this->user_id = $_COOKIE[$cookie_name];
         }
@@ -74,7 +74,7 @@ class cart extends index
         // Fetching price from Database
         $sql = $this->connect->query("SELECT * FROM `books` WHERE books_id = '$books_id'");
         $result = $sql->fetch_assoc();
-        $price = $result["price"] - 350;
+        $price = $result["price"] - 350; //Discounting the price of the book
 
         $sql = $this->connect->query("INSERT INTO `cart` (user_id,books_id,quantity,total) VALUES ('$this->user_id',$books_id,1,$price)");
 
@@ -85,14 +85,21 @@ class cart extends index
                         <div class="alert alert-success">Added to Cart</div>
                     </div>
                 </section>
-    ';
+            ';
             echo '
                 <script>
                     setTimeout(() => {
                         document.querySelector(".js-success-message").style.display = "none";
                     },1500);
                 </script>
-    ';
+            ';
+            // echo '
+            //     <script>
+            //         setTimeout(() => {
+            //             window.location.href="index.php";
+            //         },2000);
+            //     </script>
+            // ';
         } else {
             echo '
                 <section class="container-fluid position-absolute js-success-message h-100" style="z-index: 99;background-color:#f3f4f5b0;">

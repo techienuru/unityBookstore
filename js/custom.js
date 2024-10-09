@@ -9,13 +9,8 @@ import {
   renderWishlist,
 } from "../modules/wishlist.js";
 
-let currentpagePathname = window.location.pathname;
-console.log(currentpagePathname);
-
-if (
-  currentpagePathname ==
-  "/my-projects/final-year-project/unityBookshop/wishlist"
-) {
+// Checking if a span with an ID is present on the page
+if (document.querySelector(".wishlist-page-identifier")) {
   // Displaying wishlists on wishlist.php page
   renderWishlist(wishlist);
 }
