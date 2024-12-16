@@ -115,8 +115,8 @@ export function renderWishlist(wishlist) {
                                 <br>
                                 <small class="badge badge-primary">By ${author}</small>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>$${discountedPrice}</h5>
-                                    <h6 class="text-muted ml-2"><del>$${price}</del></h6>
+                                    <h5>₦${discountedPrice}</h5>
+                                    <h6 class="text-muted ml-2"><del>₦${price}</del></h6>
                                 </div>
                             </div>
                         </div>

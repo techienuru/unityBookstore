@@ -199,8 +199,8 @@ if (isset($_GET["add_to_cart"])) {
                     <h3>' . $title . '</h3>
                     <small class="pt-1">' . $category_name . '</small>
                     <div class="d-flex">
-                        <h3 class="font-weight-semi-bold mt-2">$' . $discounted_price . '</h3>
-                        <small class="mb-4 mt-2"><del>$' . $price . '</del></small>
+                        <h3 class="font-weight-semi-bold mt-2">₦' . $discounted_price . '</h3>
+                        <small class="mb-4 mt-2"><del>₦' . $price . '</del></small>
                     </div>
                     <p class="mb-4">' . $description . '</p>
                     <div class="d-flex align-items-center mb-4 pt-2">

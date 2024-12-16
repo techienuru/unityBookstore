@@ -196,7 +196,7 @@ $cart->noInCart();
                             echo '
                               <div class="d-flex justify-content-between">
                                 <p>' . $title . '</p>
-                                <p>$' . $price . '</p>
+                                <p>₦' . $price . '</p>
                               </div>     
                                     ';
                         }
@@ -206,7 +206,7 @@ $cart->noInCart();
                         <div class="d-flex justify-content-between mb-3">
                             <h6>Subtotal</h6>
                             <h6>
-                                $
+                                ₦
                                 <?php
                                 $cart->calcSubTotal();
                                 echo $cart->subTotal;
@@ -215,14 +215,14 @@ $cart->noInCart();
                         </div>
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-medium">Commission</h6>
-                            <h6 class="font-weight-medium">$100</h6>
+                            <h6 class="font-weight-medium">₦100</h6>
                         </div>
                     </div>
                     <div class="pt-2">
                         <div class="d-flex justify-content-between mt-2">
                             <h5>Total</h5>
                             <h5>
-                                $
+                                ₦
                                 <?php
                                 $cart->calcOverallTotal();
                                 echo $cart->overall_total;

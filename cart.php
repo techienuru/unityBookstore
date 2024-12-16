@@ -156,7 +156,7 @@ $cart->noInCart();
                             echo '
                                 <tr>
                                     <td class="align-middle"><img src="img/product-1.jpg" alt="" style="width: 50px;">' . $title . '</td>
-                                    <td class="align-middle js-price-value-' . $cart_id . '">$' . $price . '</td>
+                                    <td class="align-middle js-price-value-' . $cart_id . '">₦' . $price . '</td>
                                     <td class="align-middle">
                                         <div class="input-group quantity mx-auto" style="width: 100px;">
                                             <div class="input-group-btn">
@@ -172,7 +172,7 @@ $cart->noInCart();
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="align-middle js-total-value-' . $cart_id . '">$' . $total . '</td>
+                                    <td class="align-middle js-total-value-' . $cart_id . '">₦' . $total . '</td>
                                     <td class="align-middle">
                                         <a class="btn btn-sm btn-success js-update-quantity" title="Update Quantity" data-cart-id="' . $cart_id . '">
                                             <i class="fa fa-check" ></i>
@@ -195,20 +195,20 @@ $cart->noInCart();
                         <div class="d-flex justify-content-between mb-3">
                             <h6>Subtotal</h6>
                             <h6>
-                                $<?php $cart->calcsubTotal();
+                                ₦<?php $cart->calcsubTotal();
                                     echo $cart->subTotal; ?>
                             </h6>
                         </div>
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-medium">Commission</h6>
-                            <h6 class="font-weight-medium">$100</h6>
+                            <h6 class="font-weight-medium">₦100</h6>
                         </div>
                     </div>
                     <div class="pt-2">
                         <div class="d-flex justify-content-between mt-2">
                             <h5>Total</h5>
                             <h5>
-                                $<?php $cart->calcOverallTotal();
+                                ₦<?php $cart->calcOverallTotal();
                                     echo $cart->overall_total; ?>
                             </h5>
                         </div>

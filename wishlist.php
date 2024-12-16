@@ -165,7 +165,7 @@ if (isset($_GET["add_to_cart"])) {
         <!-- Success Message For wishlist and Cart -->
         <div class="position-absolute js-success-message" style="top: 50%; right:50%;z-index:1;"></div>
         <div class="row px-xl-5 js-wishlists">
-
+            <!-- Wishlist displays here dynamically -->
         </div>
     </div>
     <!-- Wishlist End -->

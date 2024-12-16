@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 06, 2024 at 07:44 PM
+-- Generation Time: Nov 10, 2024 at 03:14 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -114,7 +114,12 @@ INSERT INTO `cart` (`cart_id`, `user_id`, `books_id`, `quantity`, `total`, `stat
 (22, '72cfd33320', 4, 1, 7855, 'Pickup', 3),
 (23, '72cfd33320', 5, 1, 1720, 'Pickup', 4),
 (24, '72cfd33320', 3, 1, 440, 'Pickup', 4),
-(25, '72cfd33320', 1, 1, 2150, 'Pickup', 4);
+(25, '72cfd33320', 1, 1, 2150, 'Pickup', 4),
+(26, '72cfd33320', 5, 1, 1720, 'paid', NULL),
+(27, '72cfd33320', 3, 2, 880, 'paid', NULL),
+(29, '72cfd33320', 5, 1, 1720, 'Pickup', 5),
+(30, '72cfd33320', 4, 3, 23565, 'Pickup', 5),
+(53, '0b13aa362c', 7, 1, 380, 'paid', NULL);
 
 -- --------------------------------------------------------
 
@@ -163,7 +168,9 @@ INSERT INTO `orders` (`order_id`, `user_id`, `email`, `phone`, `payment_referenc
 (1, '', 'ibrahimnurudeenshehu@gmail.com', '08012345678', '865292035', '2024-06-27 01:46:33'),
 (2, '72cfd33320', 'ibrahimnurudeenshehu@gmail.com', '08062585624', '330049480', '2024-06-27 09:28:31'),
 (3, '72cfd33320', 'ibrahimnurudeenshehu@gmail.com', '08062585624', '878809265', '2024-06-27 10:08:11'),
-(4, '72cfd33320', 'jb@gmail.com', '08062585624', 'T798705324619689', '2024-06-28 19:54:15');
+(4, '72cfd33320', 'jb@gmail.com', '08062585624', 'T798705324619689', '2024-06-28 19:54:15'),
+(5, '72cfd33320', 'ibrahimnurudeenshehu1447@gmail.com', '08062585624', 'T909814605331311', '2024-07-08 19:54:37'),
+(6, '0b13aa362c', 'ibrahimnurudeenshehu1447@gmail.com', ' 2348062585624', 'T772609443495420', '2024-10-16 13:09:07');
 
 -- --------------------------------------------------------
 
@@ -190,7 +197,8 @@ INSERT INTO `pickup` (`pickup_id`, `user_id`, `first_name`, `last_name`, `email`
 (1, '72cfd33320', 'Ibrahim', 'Nurudeen', 'ibrahimnurudeenshehu1447@gmail.com', '08062585624', 'Akwanga by-pass, Keffi', '2024-06-27 12:47:27'),
 (2, '72cfd33320', 'Jibrin', 'Abdullahi', 'jb@gmail.com', '08012345678', 'Lowcost, Keffi', '2024-06-27 12:54:07'),
 (3, '72cfd33320', 'Jibrin', 'Abdullahi', 'jb@gmail.com', '+2348012345678', 'Lowcost, Keffi', '2024-06-29 09:52:00'),
-(4, '72cfd33320', 'Suleiman', 'Abdullateef', 'sule@gmail.com', '+2347012345678', 'Angwan Dadi, Keffi, Nasarawa state', '2024-06-29 09:56:57');
+(4, '72cfd33320', 'Suleiman', 'Abdullateef', 'sule@gmail.com', '+2347012345678', 'Angwan Dadi, Keffi, Nasarawa state', '2024-06-29 09:56:57'),
+(5, '72cfd33320', 'Ibrahim', 'Nurudeen', 'ibrahimnurudeenshehu1447@gmail.com', '08062585624', 'Akwanga by-pass, Keffi', '2024-07-08 19:57:24');
 
 -- --------------------------------------------------------
 
@@ -210,7 +218,13 @@ CREATE TABLE `soft_copy` (
 
 INSERT INTO `soft_copy` (`soft_copy_id`, `location`, `books_id`) VALUES
 (1, 'soft-copies/CV sample.pdf', 4),
-(2, 'soft-copies/Composition in English by Ubaidullah[English Department].pdf', 5);
+(2, 'soft-copies/Composition in English by Ubaidullah[English Department].pdf', 5),
+(3, 'soft-copies/Calendar 2023-2024.pdf', 1),
+(4, 'soft-copies/CMP 211 NOTE FIRST PART.pdf', 6),
+(5, 'soft-copies/IT Project Managment.pdf', 3),
+(6, 'soft-copies/MODEL 1 & 2-Queueing-Theory(vast solved examples).pdf', 7),
+(7, 'soft-copies/lecture one - Introduction.pdf', 8),
+(8, 'soft-copies/Software Engineering.pdf', 9);
 
 --
 -- Indexes for dumped tables
@@ -276,37 +290,37 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `books_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `books_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `pickup`
 --
 ALTER TABLE `pickup`
-  MODIFY `pickup_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `pickup_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `soft_copy`
 --
 ALTER TABLE `soft_copy`
-  MODIFY `soft_copy_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `soft_copy_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables
