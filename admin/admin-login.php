@@ -34,7 +34,7 @@ class login
         if ($sql->num_rows > 0) {
             return true;
         } else {
-            $this->username_email_err = 'Username/Email doesn\'t already exist';
+            $this->username_email_err = 'Username/Email doesn\'t exist!';
             return false;
         }
     }
