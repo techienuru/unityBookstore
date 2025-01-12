@@ -32,6 +32,12 @@ The **Bookstore Management System** is an online platform designed to manage an 
 
 ---
 
+### Security and Validation
+
+- Input validation: All fields are sanitized using JS to prevent invalid or malicious input.
+
+---
+
 ## Technologies Used
 
 ### Front-End:
